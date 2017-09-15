@@ -1,0 +1,30 @@
+<html>
+  <head>
+  </head>
+    <body>
+      <script>
+function addAnother() {
+	//create a new element and store it in a variable
+  var newListItem = document.createElement('li');
+  //Add a variable for the users' input.
+	var x = document.getElementById('userInput').value;
+  //create a new text mode and store it in a variable
+  var newText = document.createTextNode(x);
+  //Attach the new text mode to the new element. Notice there are no quote
+  newListItem.appendChild(newText);
+  //find the new position where the new element should be addded
+  var position = document.getElementsByTagName('ul')[0];
+  //Insert the new element into its position.
+  position.appendChild(newListItem);
+}
+      </script>
+      <button onclick="addAnother()">
+      Click Here
+      </button>
+ <p>Insert Text</p>
+<input type="text" id="userInput">
+      <ul>
+        <li>hi</li>
+      </ul>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+  <head>
+  </head>
+    <body>
+      <script>
+function addAnother() {
+	//create a new element and store it in a variable
+  var newListItem = document.createElement('li');
+  //create a new text mode and store it in a variable
+  var newText = document.createTextNode('Turkey');
+  //Attach the new text mode to the new element. Notice there are no quote
+  newListItem.appendChild(newText);
+  //find the new position where the new element should be addded
+  var position = document.getElementsByTagName('ul')[0];
+  //Insert the new element into its position.
+  position.appendChild(newListItem);
+}
+      </script>
+      <button onclick="addAnother()">
+      Click Here
+      </button>
+      <ul>
+        <li>Chicken</li>
+        <li>Duck</li>
+        <li>Goose</li>
+      </ul>
+    </body>
+</html>

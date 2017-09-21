@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script>
+    //jack shadow
+      function jackIn() {
+        document.getElementById('jack').style.boxShadow = "0px 8px 5px #d3d3d3";
+      }
+      function jackOut() {
+        document.getElementById('jack').style.boxShadow = "0px 0px 0px black";
+      }
+    //apple shadow
+      function appleIn() {
+        document.getElementById('apple').style.boxShadow = "0px 8px 5px #d3d3d3";
+      }
+      function appleOut() {
+        document.getElementById('apple').style.boxShadow = "0px 0px 0px black";
+      }
+    </script>
+  </head>
+  <body>
+      <img src="http://www.wetheunicorns.com/wp-content/uploads/2017/07/jack.png" id="jack"
+      onmouseover="jackIn()" width="30%" onmouseout="jackOut()">
+      <img src="https://i.ytimg.com/vi/TqWKZ5qUreE/mqdefault.jpg" id="apple" onmouseover="appleIn()" width="30%" onmouseout="appleOut()">
+  </body>
+</html>

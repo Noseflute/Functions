@@ -1,0 +1,8 @@
+/*This is my CSS file */
+
+#spinner {
+  width: 1000px;
+  height: 1000px;
+  background-size: cover;
+  background-image: url('https://vignette.wikia.nocookie.net/rickandmorty/images/7/7b/Picklerick.jpg/revision/latest?cb=20170725205548')
+}

@@ -4,103 +4,72 @@
       rOne=0;
         function addGuestOne() {
           if (rOne<3) {
+            rOne++;
             document.getElementById('guestOne').value;
-            //creates a new element and store it in a variable
             var listOne = document.createElement('li');
-            var balls = new Date().toUTCString();
-            //Add a variable for a users' input
-            //Create a new text node & store it in a variable
-            var textNodeOne=document.createTextNode(guestOne.value + " checked in since " + balls);
-            //Attach the new text node to the new element. No quotes
+            var timeOne = new Date().toUTCString();
+            var textNodeOne=document.createTextNode(guestOne.value + " checked in since " + timeOne);
             listOne.appendChild(textNodeOne);
-            //find the new position where the new element should be added
             document.getElementById('firstRoom').appendChild(listOne);
-          rOne++;
           }
-          else {
-            //document.getElementById('guestOne').style.visibility="hidden";
-          }
-          
         }
-      
         function removeGuestOne() {
+          rOne--;
           var a=document.getElementById('minusGuestOne').value;
           var listOne=document.getElementById('firstRoom');
           listOne.removeChild(listOne.childNodes[a]);
           document.getElementById('guestOne').style.visibility="visible";
-          rOne--;
         }
       rTwo=0;
         function addGuestTwo() {
           if (rTwo<3) {
-            //creates a new element and store it in a variable
+            rTwo++;
             var listTwo = document.createElement('li');
-            //Add a variable to a users' input
-            var newNameTwo=document.getElementById('guestTwo').value;
-            //Create a new text node & store it in a variable
-            var textNodeTwo=document.createTextNode(newNameTwo);
-            //Attach the new text node to the new element. No quotes
+            document.getElementById('guestTwo').value;
+             var timeTwo = new Date().toUTCString();
+            var textNodeTwo=document.createTextNode(guestTwo.value + " checked in since " + timeTwo);
             listTwo.appendChild(textNodeTwo);
-            //find the new position where the new element should be added
             document.getElementById('secondRoom').appendChild(listTwo);
-          rTwo++;
-          }
-          else {
-        
           }
         }
       
         function removeGuestTwo() {
+          rTwo--;
           var b =document.getElementById('minusGuestTwo').value;
           var listTwo=document.getElementById('secondRoom');
           listTwo.removeChild(listTwo.childNodes[b]);
           document.getElementById('guestTwo').style.visibility="visible";
-          rTwo--;
         }
-        rThree=0;
+      rThree=0;
         function addGuestThree() {
           if (rThree<3) {
-            //creates a new element and store it in a variable
+            rThree++;
             var listThree = document.createElement('li');
-            //Add a variable to a users' input
-            var newNameThree=document.getElementById('guestThree').value;
-            //Create a new text node & store it in a variable
-            var textNodeThree=document.createTextNode(newNameThree);
-            //Attach the new text node to the new element. No quotes
+            document.getElementById('guestThree').value;
+            var timeThree = new Date().toUTCString();
+            var textNodeThree=document.createTextNode(guestThree.value + " checked in since " + timeThree);
             listThree.appendChild(textNodeThree);
-            //find the new position where the new element should be added
             document.getElementById('thirdRoom').appendChild(listThree);
-          rThree++;
-          }
-          else {
-        
           }
         }
       
         function removeGuestThree() {
+          rThree--;
           var c=document.getElementById('minusGuestThree').value;
           var listThree=document.getElementById('thirdRoom');
           listThree.removeChild(listThree.childNodes[c]);
           document.getElementById('guestThree').style.visibility="visible";
-          rThree--;
         }
-        rFour=0;
+      rFour=0;
         function addGuestFour() {
           if (rFour<3) {
-            //creates a new element and store it in a variable
+            rFour++;
             var listFour= document.createElement('li');
-            //Add a variable to a users' input
-            var newNameFour=document.getElementById('guestFour').value;
-            //Create a new text node & store it in a variable
-            var textNodeFour=document.createTextNode(newNameFour);
-            //Attach the new text node to the new element. No quotes
+            document.getElementById('guestFour').value;
+            var timeFour = new Date().toUTCString();
+            var textNodeFour=document.createTextNode(guestFour.value + " checked in since " + timeFour);
             listFour.appendChild(textNodeFour);
-            //find the new position where the new element should be added
             document.getElementById('fourthRoom').appendChild(listFour);
-          rFour++;
-          }
-          else {
-        
           }
         }
       
@@ -119,7 +88,7 @@
         float: left;
         border-width: 10px;
         border-style: solid;
-        border-color: rgba(66,134,244,1);
+        border-color: rgba(255,215,0,1);
       	border-radius: 20px 20px 20px 20px;
         font-weight: bold;
         text-align: center;
@@ -138,7 +107,7 @@
         float: left;
         border-width: 10px;
         border-style: solid;
-        border-color: rgba(66,134,244,1);
+        border-color: rgba(225,215,0,1);
       	border-radius: 20px 20px 20px 20px;
         font-weight:bold;
         text-align: center;
@@ -153,7 +122,7 @@
         float: left;
         border-width: 10px;
         border-style: solid;
-        border-color: rgba(66,134,244,1);
+        border-color: rgba(225,215,0,1);
         border-radius: 20px 20px 20px 20px;
         font-weight:bold;
         text-align: center;
@@ -168,7 +137,7 @@
         float: left;
         border-width: 10px;
         border-style: solid;
-        border-color: rgba(66,134,244,1);
+        border-color: rgba(225,215,0,1);
         border-radius: 20px 20px 20px 20px;
         font-weight:bold;
         text-align: center;
@@ -226,10 +195,6 @@
       <ol id="fourthRoom">
         
       </ol>
-    </div>
-    
-    <div id="aboutPage">
-    <a href="hotelAbout.html">About</a>
     </div>
   </body>
 </html>

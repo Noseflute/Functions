@@ -1,0 +1,235 @@
+<html>
+  <head>
+    <script>
+      rOne=0;
+        function addGuestOne() {
+          if (rOne<3) {
+            document.getElementById('guestOne').value;
+            //creates a new element and store it in a variable
+            var listOne = document.createElement('li');
+            var balls = new Date().toUTCString();
+            //Add a variable for a users' input
+            //Create a new text node & store it in a variable
+            var textNodeOne=document.createTextNode(guestOne.value + " checked in since " + balls);
+            //Attach the new text node to the new element. No quotes
+            listOne.appendChild(textNodeOne);
+            //find the new position where the new element should be added
+            document.getElementById('firstRoom').appendChild(listOne);
+          rOne++;
+          }
+          else {
+            //document.getElementById('guestOne').style.visibility="hidden";
+          }
+          
+        }
+      
+        function removeGuestOne() {
+          var a=document.getElementById('minusGuestOne').value;
+          var listOne=document.getElementById('firstRoom');
+          listOne.removeChild(listOne.childNodes[a]);
+          document.getElementById('guestOne').style.visibility="visible";
+          rOne--;
+        }
+      rTwo=0;
+        function addGuestTwo() {
+          if (rTwo<3) {
+            //creates a new element and store it in a variable
+            var listTwo = document.createElement('li');
+            //Add a variable to a users' input
+            var newNameTwo=document.getElementById('guestTwo').value;
+            //Create a new text node & store it in a variable
+            var textNodeTwo=document.createTextNode(newNameTwo);
+            //Attach the new text node to the new element. No quotes
+            listTwo.appendChild(textNodeTwo);
+            //find the new position where the new element should be added
+            document.getElementById('secondRoom').appendChild(listTwo);
+          rTwo++;
+          }
+          else {
+        
+          }
+        }
+      
+        function removeGuestTwo() {
+          var b =document.getElementById('minusGuestTwo').value;
+          var listTwo=document.getElementById('secondRoom');
+          listTwo.removeChild(listTwo.childNodes[b]);
+          document.getElementById('guestTwo').style.visibility="visible";
+          rTwo--;
+        }
+        rThree=0;
+        function addGuestThree() {
+          if (rThree<3) {
+            //creates a new element and store it in a variable
+            var listThree = document.createElement('li');
+            //Add a variable to a users' input
+            var newNameThree=document.getElementById('guestThree').value;
+            //Create a new text node & store it in a variable
+            var textNodeThree=document.createTextNode(newNameThree);
+            //Attach the new text node to the new element. No quotes
+            listThree.appendChild(textNodeThree);
+            //find the new position where the new element should be added
+            document.getElementById('thirdRoom').appendChild(listThree);
+          rThree++;
+          }
+          else {
+        
+          }
+        }
+      
+        function removeGuestThree() {
+          var c=document.getElementById('minusGuestThree').value;
+          var listThree=document.getElementById('thirdRoom');
+          listThree.removeChild(listThree.childNodes[c]);
+          document.getElementById('guestThree').style.visibility="visible";
+          rThree--;
+        }
+        rFour=0;
+        function addGuestFour() {
+          if (rFour<3) {
+            //creates a new element and store it in a variable
+            var listFour= document.createElement('li');
+            //Add a variable to a users' input
+            var newNameFour=document.getElementById('guestFour').value;
+            //Create a new text node & store it in a variable
+            var textNodeFour=document.createTextNode(newNameFour);
+            //Attach the new text node to the new element. No quotes
+            listFour.appendChild(textNodeFour);
+            //find the new position where the new element should be added
+            document.getElementById('fourthRoom').appendChild(listFour);
+          rFour++;
+          }
+          else {
+        
+          }
+        }
+      
+        function removeGuestFour() {
+          var d =document.getElementById('minusGuestFour').value;
+          var listFour=document.getElementById('fourthRoom');
+          listFour.removeChild(listFour.childNodes[d]);
+          document.getElementById('guestFour').style.visibility="visible";
+          rFour--;
+        }
+    </script>
+    <style>
+      #hotelOne {
+        width: 23.5%;
+        height: 250px;
+        float: left;
+        border-width: 10px;
+        border-style: solid;
+        border-color: rgba(66,134,244,1);
+      	border-radius: 20px 20px 20px 20px;
+        font-weight: bold;
+        text-align: center;
+        background-image:
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 20px;
+        overflow: scroll;
+        background-image:url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4BrdbiSFlik14dmb5/time-lapse-moving-cloud-on-blue-sky-background_nolpxw5yqe__S0000.jpg);
+        background-size: cover;
+      }
+      #hotelTwo {
+        width: 23.5%;
+        height: 250px;
+        float: left;
+        border-width: 10px;
+        border-style: solid;
+        border-color: rgba(66,134,244,1);
+      	border-radius: 20px 20px 20px 20px;
+        font-weight:bold;
+        text-align: center;
+        font-size: 20px;
+        overflow: scroll;
+        background-image:url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4BrdbiSFlik14dmb5/time-lapse-moving-cloud-on-blue-sky-background_nolpxw5yqe__S0000.jpg);
+        background-size: cover;
+      }
+      #hotelThree {
+        width: 23.5%;
+        height: 250px;
+        float: left;
+        border-width: 10px;
+        border-style: solid;
+        border-color: rgba(66,134,244,1);
+        border-radius: 20px 20px 20px 20px;
+        font-weight:bold;
+        text-align: center;
+        font-size: 20px;
+        overflow: scroll;
+        background-image:url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4BrdbiSFlik14dmb5/time-lapse-moving-cloud-on-blue-sky-background_nolpxw5yqe__S0000.jpg);
+        background-size: cover;
+      }
+      #hotelFour {
+        width: 23.5%;
+        height: 250px;
+        float: left;
+        border-width: 10px;
+        border-style: solid;
+        border-color: rgba(66,134,244,1);
+        border-radius: 20px 20px 20px 20px;
+        font-weight:bold;
+        text-align: center;
+        font-size: 20px;
+        overflow: scroll;
+        background-image:url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/4BrdbiSFlik14dmb5/time-lapse-moving-cloud-on-blue-sky-background_nolpxw5yqe__S0000.jpg);
+        background-size: cover;
+      }
+      body {
+        background-image:url(https://wtop.com/wp-content/uploads/2016/10/Campaign-2016-Trump-Brand.jpeg);
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!--This is the first div-->
+    <div id="hotelOne">
+      <p>Room 1</p>
+        <input type="text" id="guestOne">
+        <button onclick="addGuestOne()">Add Guest</button>
+        <input type="number" id="minusGuestOne">
+        <button onclick="removeGuestOne()">Remove Guest</button>
+      <ol id="firstRoom">
+          
+      </ol>
+    </div>
+    <!--This is the second div-->
+    <div id="hotelTwo">
+      <p>Room 2</p>
+        <input type="text" id="guestTwo">
+        <button onclick="addGuestTwo()">Add Guest</button>
+        <input type="number" id="minusGuestTwo">
+        <button onclick="removeGuestTwo()">Remove Guest</button>
+      <ol id="secondRoom">
+          
+      </ol>
+    </div>
+    <!--This is the third div-->
+    <div id="hotelThree">
+      <p>Room 3</p>
+        <input type="text" id="guestThree">
+        <button onclick="addGuestThree()">Add Guest</button>
+        <input type="number" id="minusGuestThree">
+        <button onclick="removeGuestThree()">Remove Guest</button>
+      <ol id="thirdRoom">
+          
+      </ol>
+    </div>
+    <div id="hotelFour">
+      <p>Room 4</p>
+        <input type="text" id="guestFour">
+        <button onclick="addGuestFour()">Add Guest</button>
+        <input type="text" id="minusGuestFour">
+        <button onclick="removeGuestFour()">Remove Guest</button>
+      <ol id="fourthRoom">
+        
+      </ol>
+    </div>
+    
+    <div id="aboutPage">
+    <a href="hotelAbout.html">About</a>
+    </div>
+  </body>
+</html>

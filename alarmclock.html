@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <script>
+      var i = [Math.floor(Math.random()*5)+1];
+      //variable I is a whole number that goes from 1 to 5
+      var i = parseInt(i);
+      //I forcce variable i to be an integer
+      var x = i *1000;
+      function sayAloha() {
+    	//I have a function called sayALoha
+      document.getElementById('demo').innerHTML = x;
+      //I will write the number of milliseconds to the screen
+      setTimeout(function() {
+  	  document.getElementById('wake').innerHTML = "GET UP!"
+      },x);
+      //variable x is the amount of milliseconds before it activates
+}
+    </script>
+      <button onclick="sayAloha()">x</button>
+      <p id='demo'></p>
+      <p id="wake"></p>
+  </body>
+</html>
